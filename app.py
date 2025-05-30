@@ -3,7 +3,7 @@ import google.generativeai as genai
 from datetime import datetime
 
 # secrets.toml에서 API 키 불러오기
-GOOGLE_API_KEY = st.secrets["general"].get("google_api_key", "")
+GOOGLE_API_KEY = st.secrets["general"]["GOOGLE_API_KEY"]
 
 genai.configure(api_key=GOOGLE_API_KEY)
 
